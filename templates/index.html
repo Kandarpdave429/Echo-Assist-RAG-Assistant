@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IITK PG AI Assistant</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>IITK PG Admission Assistant</h1>
+
+    <!-- Text Chat -->
+    <div>
+        <input type="text" id="textQuery" placeholder="Type your question here" style="width: 400px;">
+        <button id="sendTextBtn">Send</button>
+    </div>
+
+    <!-- Voice Chat -->
+    <div>
+        <button id="startRecording">🎤 Start Voice</button>
+        <button id="stopRecording" disabled>Stop</button>
+    </div>
+
+    <!-- Response -->
+    <div id="chatOutput" style="margin-top:20px; white-space: pre-wrap;"></div>
+    <audio id="ttsAudio" controls style="display:none;"></audio>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
